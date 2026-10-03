@@ -335,8 +335,8 @@ a {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   /* Foto sin fondo: el corte inferior se difumina hacia el papel */
-  -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent 98%);
-  mask-image: linear-gradient(to bottom, #000 72%, transparent 98%);
+  -webkit-mask-image: radial-gradient(ellipse 72% 70% at 50% 30%, #000 72%, transparent 100%);
+  mask-image: radial-gradient(ellipse 72% 70% at 50% 30%, #000 72%, transparent 100%);
 }
 
 @media (max-width: 51.99rem) {
