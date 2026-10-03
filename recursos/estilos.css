@@ -334,8 +334,9 @@ a {
 .retrato img {
   aspect-ratio: 4 / 5;
   object-fit: cover;
-  border-radius: 10rem 10rem var(--radio) var(--radio);
-  background: var(--arena);
+  /* Foto sin fondo: el corte inferior se difumina hacia el papel */
+  -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent 98%);
+  mask-image: linear-gradient(to bottom, #000 72%, transparent 98%);
 }
 
 @media (max-width: 51.99rem) {
