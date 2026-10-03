@@ -98,7 +98,7 @@ Asesoramiento y venta de mobiliario, decoración, iluminación y exterior; gesti
 ### Formación e idiomas
 **Formación en ventas**
 - **Antiventa — Amaya Oceda** · En curso (desde mayo de 2026). Programa de High-Ticket Sales y Digital Closing: venta consultiva, gestión de objeciones, técnicas de cierre, roleplays y análisis de llamadas.
-- **HubSpot Academy — Inbound Sales Certification y Sales Hub Software Certification** · En curso.
+- **HubSpot Academy — Inbound Sales Certification y Sales Hub Software Certification** · Certificada · 2026.
 
 **Idiomas**
 - **Español:** nativo.
@@ -204,7 +204,7 @@ Conseil et vente de mobilier, décoration, luminaires et articles d'extérieur ;
 ### Formation et langues
 **Formation à la vente**
 - **Antiventa — Amaya Oceda** · En cours (depuis mai 2026). Programme High-Ticket Sales et Digital Closing : vente conseil, traitement des objections, techniques de closing, jeux de rôle et analyse d'appels.
-- **HubSpot Academy — Inbound Sales Certification et Sales Hub Software Certification** · En cours.
+- **HubSpot Academy — Inbound Sales Certification et Sales Hub Software Certification** · Certifiée · 2026.
 
 **Langues**
 - **Espagnol :** langue maternelle.
