@@ -185,6 +185,16 @@ a {
   }
 }
 
+@media (max-width: 22.5rem) {
+  .marca {
+    font-size: 1.02rem;
+  }
+
+  .menu {
+    gap: 0.6rem;
+  }
+}
+
 /* Botones */
 
 .botones {
@@ -568,6 +578,27 @@ a {
 
 .lista-simple span {
   color: var(--tinta-suave);
+}
+
+.credencial {
+  display: block;
+  margin-top: 0.25rem;
+}
+
+.credencial a {
+  white-space: nowrap;
+}
+
+.oculto {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 .estado {
