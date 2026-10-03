@@ -93,13 +93,6 @@ Venta y asesoramiento en Decoración, Pintura e Iluminación.
 Torrevieja y Orihuela Costa (Alicante) · Marzo 2017 – agosto 2019
 Asesoramiento y venta de mobiliario, decoración, iluminación y exterior; gestión de pedidos, caja y cobro.
 
-**Fundadora, directora y profesora — El Limón Embrujado (academia de baile)**
-Alquerías (Murcia) · 2014 – 2016
-Creé y gestioné la academia, con aproximadamente 100 alumnos: atención a interesados, inscripciones, precios, cobros y fidelización.
-
-**Experiencia previa en hostelería**
-Sala y cocina: atención directa al público y trabajo bajo presión.
-
 > Fuente: CV maestro (los mismos cargos, fechas y cifras). La operación con Holanda ya se cuenta arriba, por eso aquí no se repite.
 
 ### Formación e idiomas
@@ -206,13 +199,6 @@ Vente et conseil, rayons Décoration, Peinture et Éclairage.
 Torrevieja et Orihuela Costa (Alicante) · mars 2017 – août 2019
 Conseil et vente de mobilier, décoration, luminaires et articles d'extérieur ; gestion des commandes et encaissement.
 
-**Fondatrice, directrice et professeure — El Limón Embrujado (école de danse)**
-Alquerías (Murcie) · 2014 – 2016
-J'ai créé et géré ma propre école de danse, qui a compté jusqu'à environ 100 élèves : accueil des personnes intéressées, inscriptions, tarifs, encaissements et fidélisation.
-
-**Expérience antérieure en hôtellerie-restauration** ✏️
-Salle et cuisine : contact direct avec le public et travail sous pression.
-
 > Source : profil LinkedIn en français (mêmes intitulés, dates et chiffres).
 
 ### Formation et langues
@@ -244,6 +230,7 @@ lmartinezgalvez.pro@gmail.com
 ## Decisiones (2026-10-03)
 - La web va en primera persona: Laura confirma que los textos suenan a ella, en español y en francés.
 - La ESO no aparece en la web (sigue en el CV).
+- La academia de baile y la hostelería no aparecen en la web (siguen en el CV). El "+8 años" no cambia: solo cuenta Leroy Merlin y Mercaterra.
 - En la historia del colegio, "ma responsable": la responsable de Laura era una mujer.
 - Sin teléfono y sin CV descargable: el CV se pide por email.
 - Sin sector inmobiliario en esta versión.
