@@ -1,20 +1,22 @@
 # Herramientas
 
-Plantillas para generar las imágenes de la web. No se publican (están en `.vercelignore`). Se usan Chrome, `sips` y `cwebp`/`ffmpeg`, que ya están en el Mac. Sin dependencias nuevas.
+Plantillas para generar las imágenes de la web. No se publican (están en `.vercelignore`). Se usan Chrome, `sips`, `cwebp`/`dwebp` y `ffmpeg`, que ya están en el Mac. Sin dependencias nuevas.
 
 Los comandos se ejecutan desde la raíz de este repositorio.
 
 ## Foto de la portada
 
-Se genera desde un PNG con el fondo ya quitado (1200 × 1200, `Diseño sin título(10).png` en Descargas), que **nunca se modifica**: se copia a una carpeta temporal y se trabaja sobre la copia. El difuminado del borde inferior no está en la imagen: lo pone el CSS (`mask-image` en `.retrato img`).
+Se genera desde `../laura-sales-closer/07-fotos/laura-foto-perfil-sin-fondo.png` (1200 × 1200, con el fondo ya quitado), que **nunca se modifica**: se copia a una carpeta temporal y se trabaja sobre la copia. El difuminado del borde inferior no está en la imagen: lo pone el CSS (`mask-image` en `.retrato img`).
 
-Recorte 4:5 (960 × 1200 desde x=202, y=0), sin retoque, en 480 y 800 px de ancho y en AVIF, WebP y PNG, los tres con transparencia:
+Recorte 4:5 (960 × 1200 desde x=202, y=0), sin retoque, en 480 y 800 px de ancho y en WebP y PNG, los dos con transparencia y sin los metadatos de Canva que trae el original. Sin AVIF: `sips` guarda la transparencia de forma que Chrome y Firefox no la reconocen y pintan el fondo negro. El PNG se saca de un WebP sin pérdida porque `dwebp` no copia metadatos:
 
 ```bash
-T=$(mktemp -d); cp ~/Downloads/"Diseño sin título(10).png" "$T/orig.png"
+T=$(mktemp -d); cp ../laura-sales-closer/07-fotos/laura-foto-perfil-sin-fondo.png "$T/orig.png"
 sips -c 1200 960 --cropOffset 0 202 "$T/orig.png" --out "$T/crop.png"
-for w in 480 800; do h=$((w*5/4)); sips -z $h $w "$T/crop.png" --out recursos/img/laura-martinez-galvez-$w.png; cwebp -quiet -q 80 -alpha_q 90 recursos/img/laura-martinez-galvez-$w.png -o recursos/img/laura-martinez-galvez-$w.webp; sips -s format avif -s formatOptions 60 recursos/img/laura-martinez-galvez-$w.png --out recursos/img/laura-martinez-galvez-$w.avif; done
+for w in 480 800; do h=$((w*5/4)); sips -z $h $w "$T/crop.png" --out "$T/$w.png"; cwebp -quiet -q 80 -alpha_q 90 "$T/$w.png" -o recursos/img/laura-martinez-galvez-$w.webp; cwebp -quiet -lossless "$T/$w.png" -o "$T/$w-ll.webp"; dwebp -quiet "$T/$w-ll.webp" -o recursos/img/laura-martinez-galvez-$w.png; done
 ```
+
+La foto anterior, con fondo, se guarda como `laura-martinez-galvez-con-fondo-*` (AVIF, WebP y JPEG). La web ya no la usa.
 
 ## Imagen para compartir en redes (Open Graph, 1200 × 630)
 
