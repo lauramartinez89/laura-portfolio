@@ -1,0 +1,37 @@
+<!doctype html>
+<!-- Plantilla de la imagen que se ve al compartir la web (1200 × 630). Añadir ?fr para la versión francesa. Instrucciones en herramientas/README.md -->
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<style>
+  @font-face { font-family: "Newsreader"; src: url("../recursos/fuentes/newsreader-latin-wght-normal.woff2") format("woff2"); font-weight: 200 800; }
+  @font-face { font-family: "Source Sans 3"; src: url("../recursos/fuentes/source-sans-3-latin-wght-normal.woff2") format("woff2"); font-weight: 200 900; }
+  html, body { margin: 0; width: 1200px; height: 630px; overflow: hidden; }
+  body { display: grid; grid-template-columns: 1fr 440px; background: #f7f2eb; color: #1b2638; font-family: "Source Sans 3", sans-serif; }
+  .texto { padding: 84px 0 0 80px; }
+  .antetitulo { font-size: 20px; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #9c4a28; }
+  h1 { margin: 22px 0 0; font-family: "Newsreader", serif; font-weight: 450; font-size: 82px; line-height: 1.02; }
+  .linea { margin-top: 34px; font-size: 28px; font-weight: 600; }
+  .linea2 { margin-top: 10px; font-size: 26px; color: #4a5466; }
+  .regla { margin-top: 44px; width: 120px; height: 4px; background: #1b2638; }
+  .foto { background: url("../recursos/img/laura-martinez-galvez-800.jpg") center 18% / cover; }
+</style>
+</head>
+<body>
+  <div class="texto">
+    <div class="antetitulo">Sales Closer</div>
+    <h1>Laura<br>Martínez Gálvez</h1>
+    <div class="linea" id="l1">Venta consultiva · Negociación · Cierre de ventas</div>
+    <div class="linea2" id="l2">+8 años de experiencia comercial · Español y francés</div>
+    <div class="regla"></div>
+  </div>
+  <div class="foto"></div>
+  <script>
+    if (location.search.includes("fr")) {
+      document.documentElement.lang = "fr";
+      document.getElementById("l1").textContent = "Vente conseil · Négociation · Closing";
+      document.getElementById("l2").textContent = "+8 ans d’expérience commerciale · Français et espagnol";
+    }
+  </script>
+</body>
+</html>
